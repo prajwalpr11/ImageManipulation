@@ -1,0 +1,12 @@
+hi
+bye
+#abc
+
+s
+
+s
+
+
+tata
+
+load f.ppm a

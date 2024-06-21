@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="viewUI:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/viewUI_jar2</output-path>
+    <root id="archive" name="group.jar">
+      <element id="module-output" name="group" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/assignment4/lib/jcommon-1.0.23.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/assignment4/lib/jfreechart-1.0.19.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

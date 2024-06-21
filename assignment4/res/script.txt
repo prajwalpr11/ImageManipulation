@@ -1,0 +1,154 @@
+#load jpg image
+load input-images/dog1.jpg dog1-jpg
+
+#load png image
+load input-images/dog1.png dog1-png
+
+#load jpeg image
+load input-images/dog1.jpeg dog1-jpeg
+
+#load bmp image
+load input-images/dog1.bmp dog1-bmp
+
+#load ppm image
+load input-images/dog1.ppm dog1-ppm
+
+#load jpg image
+load input-images/spa-1.png spa
+
+#transform image
+sepia dog1-jpg dog-sepia
+
+#save image
+save output-images/dog-sepia.jpg dog-sepia
+
+#blur image
+blur dog1-jpg dog-blur
+
+#sharpen image
+sharpen dog1-jpg dog-sharp
+
+
+#transform image
+greyscale dog1-jpg dog-greyscale
+
+#save image
+save output-images/dog-greyscale.jpg dog-greyscale
+
+#dither image
+dither dog1-jpg dog-dither
+
+
+#horizontal flip image
+horizontal-flip dog-blur dog-h-flip
+
+#vertical flip image
+vertical-flip dog-blur dog-v-flip
+
+#rgb-split image-name red-image green-image blue-image:
+rgb-split dog-blur dog-red-cmb dog-green-cmb dog-blue-cmb
+
+#rgb-combine image-name red-image green-image blue-image:
+rgb-combine dog-cmb dog-red-cmb dog-green-cmb dog-blue-cmb
+
+#brighten increment image-name target-image-name:
+brighten 50 dog-blur dog-brighten-blur
+
+
+#brighten increment image-name target-image-name:
+brighten -50 dog-blur dog-darken-blur
+
+#greyscale red-component image-name target-image-name:
+greyscale red-component dog-blur dog-red-blur
+
+#greyscale green-component image-name target-image-name:
+greyscale green-component dog-blur dog-green-blur
+
+#greyscale blue-component image-name target-image-name:
+greyscale blue-component dog-blur dog-blue-blur
+
+#greyscale value-component image-name target-image-name:
+greyscale value-component dog-blur dog-value-blur
+
+#greyscale luma-component image-name target-image-name:
+greyscale luma-component dog-blur dog-luma-blur
+
+#greyscale intensity-component image-name target-image-name:
+greyscale intensity-component dog-blur dog-intensity-blur
+
+#invalid blur command
+blurImage dog-new-jpg image-not-loaded
+
+
+#save image
+save output-images/dog-red-comp.jpg dog-red-blur
+
+#save image
+save output-images/dog-green-comp.jpg dog-green-blur
+
+#save image
+save output-images/dog-blue-comp.jpg dog-blue-blur
+
+#save image
+save output-images/dog-value-comp.jpg dog-value-blur
+
+#save image
+save output-images/dog-luma-comp.jpg dog-luma-blur
+
+#save image
+save output-images/dog-intensity-comp.jpg dog-intensity-blur
+
+#save image
+save output-images/dog-brighten-blur.jpg dog-brighten-blur
+
+#save image
+save output-images/dog-darken-blur.jpg dog-darken-blur
+
+#save image
+save output-images/dog-cmb.jpg dog-cmb
+
+#save image
+save output-images/dog-red-split.jpg dog-red-cmb
+
+#save image
+save output-images/dog-green-split.jpg dog-green-cmb
+
+#save image
+save output-images/dog-blue-split.jpg dog-blue-cmb
+
+#save image
+save output-images/dog-v-flip.jpg dog-v-flip
+
+#save image
+save output-images/dog-h-flip.jpg dog-h-flip
+
+#save image
+save output-images/dog-blur.jpg dog-blur
+
+#save image
+save output-images/dog-sharpen.jpg dog-sharp
+
+
+
+#save image
+save output-images/dog-dither.jpg dog-dither
+
+#save dog
+save output-images/dog-test-save.ppm dog-blur
+
+#save dog
+save output-images/dog-test-save.jpg dog-blur
+
+#save dog
+save output-images/dog-test-save.png dog-blur
+
+#save dog
+save output-images/dog-test-save.jpeg dog-blur
+
+#save dog
+save output-images/dog-test-save.bmp dog-blur
+
+
+exit
+
+
